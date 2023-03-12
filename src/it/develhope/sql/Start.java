@@ -22,7 +22,7 @@ public class Start {
 
         System.out.println(connection != null);
 
-        String query3 = "CREATE TABLE IF NOT EXISTS students (student_id INT(10) NOT NULL AUTO_INCREMENT , last_name VARCHAR(30), first_name VARCHAR(30), PRIMARY KEY (student_id))";
+        String query3 = "CREATE TABLE IF NOT EXISTS students (student_id INT(10) NOT NULL AUTO_INCREMENT , last_name VARCHAR(30), first_name VARCHAR(30), CONSTRAINT student_pk PRIMARY KEY (student_id))";
 
         statement.execute(query3);
 
